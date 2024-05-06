@@ -22,7 +22,7 @@ class TestVehicles(unittest.TestCase):
 
     def test_car_max_speed(self):
         car = vehicles.Car("Chevrolet", "Corvette", 194)
-        self.assertEqual(car.max_speed, 200)  # This will fail because max_speed is not 200
+        self.assertEqual(car.max_speed, 194)  # This will pass because max_speed is 194
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
