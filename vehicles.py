@@ -6,7 +6,7 @@ class Vehicle:
 class Car(Vehicle):
     def __init__(self, make, model, max_speed):
         super().__init__(make, model)
-        self.max_speed = 0 
+        self.max_speed = max_speed  # Set max_speed to the passed value
 
 class Truck(Vehicle):
     def __init__(self, make, model, loading_capacity):
